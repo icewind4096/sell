@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /sell
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.235.129/seller?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+###使用单独配置文件方式############
+#logging:
+#  config: classpath:logback-spring.xml
+#          配置文件暂时放到log目录中
+###使用yml中直接配置方式##########
+logging:
+  pattern:
+    console: "%d -%msg%n"
+  level:
+    root: debug
+#不对log进行文件输出
+#  file:
+#    name: src\main\resources\log\seller.log
