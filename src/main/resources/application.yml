@@ -7,19 +7,19 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.235.129/seller?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://192.168.235.129/sell?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
-###Ê¹ÓÃµ¥¶ÀÅäÖÃÎÄ¼ş·½Ê½############
+###ä½¿ç”¨å•ç‹¬é…ç½®æ–‡ä»¶æ–¹å¼############
 #logging:
 #  config: classpath:logback-spring.xml
-#          ÅäÖÃÎÄ¼şÔİÊ±·Åµ½logÄ¿Â¼ÖĞ
-###Ê¹ÓÃymlÖĞÖ±½ÓÅäÖÃ·½Ê½##########
+#          é…ç½®æ–‡ä»¶æš‚æ—¶æ”¾åˆ°logç›®å½•ä¸­
+###ä½¿ç”¨ymlä¸­ç›´æ¥é…ç½®æ–¹å¼##########
 logging:
   pattern:
     console: "%d -%msg%n"
   level:
     root: debug
-#²»¶Ôlog½øĞĞÎÄ¼şÊä³ö
+#ä¸å¯¹logè¿›è¡Œæ–‡ä»¶è¾“å‡º
 #  file:
 #    name: src\main\resources\log\seller.log

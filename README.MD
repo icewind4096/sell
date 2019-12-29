@@ -43,12 +43,12 @@
           level: debug //配置log输出级别, 还可以指定特定类的输出级别  
     ```
     b.) 使用logback-spring.xml文件方式进行配置   
-        i.) 首先在application.yml中进行配置  
+    i.) 首先在application.yml中进行配置  
      ```
         logging:
           config: classpath:logback-spring.xml
-     ```
-        ii.) 其次在logback-spring.xml配置具体模式
+     ``` 
+    ii.) 其次在logback-spring.xml配置具体模式
      ```
         <configuration>
             <appender name="consolelog" class="ch.qos.logback.core.ConsoleAppender">
