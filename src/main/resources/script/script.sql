@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS `product_info` (
   `stock` int NOT NULL comment '库存',
   `description` varchar(64) NOT NULL comment '描述',
   `icon` varchar(512) NOT NULL comment '小图片链接',
+  `status` tinyint NOT NULL DEFAULT '0' comment '商品状态, 默认0-正常 1下架',
   `category_Type` int NOT NULL comment '类目编号',
   `cr_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP comment '创建时间',
   `update_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP comment '修改时间',
