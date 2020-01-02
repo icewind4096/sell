@@ -39,7 +39,7 @@ class CategoryServiceImplTest {
 
     @Test
     void save() throws Exception {
-        ProductCategory productCategory = new ProductCategory("女生最爱榜", 11);
+        ProductCategory productCategory = categoryService.save(new ProductCategory("女生最爱榜", 11));
         Assert.assertNotNull(productCategory);
     }
 }
