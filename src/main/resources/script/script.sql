@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `order_master` (
   `cr_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP comment '创建时间',
   `update_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP comment '修改时间',
   PRIMARY KEY (`id`),
-  KEY `idx_buyerOpenID` (`buyerOpenID`)
+  KEY `idx_buyerOpenID` (`buyer_OpenID`)
 ) comment '订单表';
 
 DROP TABLE IF EXISTS `order_detail`;
@@ -53,5 +53,5 @@ CREATE TABLE IF NOT EXISTS `order_detail` (
   `cr_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP comment '创建时间',
   `update_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP comment '修改时间',
   PRIMARY KEY (`id`),
-  KEY `idx_orderId` (`orderId`)
+  KEY `idx_orderId` (`order_Id`)
 ) comment '订单详情表';
