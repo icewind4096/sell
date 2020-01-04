@@ -15,11 +15,11 @@ spring:
 #  config: classpath:logback-spring.xml
 #          配置文件暂时放到log目录中
 ###使用yml中直接配置方式##########
-logging:
-  pattern:
-    console: "%d -%msg%n"
-  level:
-    root: debug
+#logging:
+#  pattern:
+#    console: "%d -%msg%n"
+#  level:
+#    root: debug
 #不对log进行文件输出
 #  file:
 #    name: src\main\resources\log\seller.log
