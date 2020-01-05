@@ -23,26 +23,26 @@ class ProductServiceImplTest {
     ProductServiceImpl productService;
 
     @Test
-    void findOne() {
+    void findOneTest() {
         ProductInfo productInfo = productService.findOne("123456");
         Assert.assertEquals("123456", productInfo.getId());
     }
 
     @Test
-    void findUpAll() {
+    void findUpAllTest() {
         List<ProductInfo> productInfoList = productService.findUpAll();
         Assert.assertNotEquals(0, productInfoList.size());
     }
 
     @Test
-    void findAll() {
+    void findAllTest() {
         PageRequest pageRequest = PageRequest.of(0, 2);
         Page<ProductInfo> productInfoPage = productService.findAll(pageRequest);
         Assert.assertNotEquals(0, productInfoPage.getTotalElements());
     }
 
     @Test
-    void save() {
+    void saveTest() {
         ProductInfo productInfo = new ProductInfo();
         productInfo.setId("123457");
         productInfo.setName("皮皮虾");
